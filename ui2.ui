@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.3">
+  <object class="tk.Toplevel" id="Toplevel1">
+    <property name="geometry">600x420</property>
+    <property name="height">200</property>
+    <property name="title" translatable="yes">md 2 word converter</property>
+    <property name="width">500</property>
+    <child>
+      <object class="ttk.Labelframe" id="Labelframe1">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Input</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="fill">x</property>
+          <property name="padx">2</property>
+          <property name="pady">2</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Frame" id="Frame3">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="side">bottom</property>
+            </layout>
+            <child>
+              <object class="ttk.Combobox" id="md_file_selector" named="True">
+                <property name="textvariable">string:md_file_name</property>
+                <bind sequence="&lt;&lt;ComboboxSelected&gt;&gt;" handler="ms_cbox_selected" add="" />
+                <layout manager="pack">
+                  <property name="expand">true</property>
+                  <property name="fill">x</property>
+                  <property name="padx">2</property>
+                  <property name="pady">2</property>
+                  <property name="side">left</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Button" id="md_file_select_button" named="True">
+                <property name="style">Toolbutton</property>
+                <property name="text" translatable="yes">Select</property>
+                <bind sequence="&lt;ButtonRelease&gt;" handler="ms_file_select" add="" />
+                <layout manager="pack">
+                  <property name="expand">false</property>
+                  <property name="padx">2</property>
+                  <property name="pady">2</property>
+                  <property name="side">left</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Label" id="Label2">
+            <property name="text" translatable="yes">Select md file: </property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="padx">2</property>
+              <property name="pady">2</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Labelframe" id="Labelframe3">
+        <property name="height">200</property>
+        <property name="text" translatable="yes">Output</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="fill">x</property>
+          <property name="padx">2</property>
+          <property name="pady">2</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Frame" id="Frame1">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="pady">2</property>
+              <property name="side">top</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="Label1">
+                <property name="text" translatable="yes">Select template: </property>
+                <layout manager="pack">
+                  <property name="fill">x</property>
+                  <property name="padx">2</property>
+                  <property name="pady">2</property>
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Frame" id="Frame2">
+                <property name="height">200</property>
+                <property name="width">200</property>
+                <layout manager="pack">
+                  <property name="fill">x</property>
+                  <property name="side">top</property>
+                </layout>
+                <child>
+                  <object class="ttk.Entry" id="Entry1">
+                    <property name="textvariable">string:template_file</property>
+                    <layout manager="pack">
+                      <property name="expand">true</property>
+                      <property name="fill">x</property>
+                      <property name="padx">2</property>
+                      <property name="pady">2</property>
+                      <property name="side">left</property>
+                    </layout>
+                  </object>
+                </child>
+                <child>
+                  <object class="ttk.Button" id="template_select_button" named="True">
+                    <property name="style">Toolbutton</property>
+                    <property name="text" translatable="yes">Select</property>
+                    <bind sequence="&lt;ButtonRelease&gt;" handler="select_template_file" add="" />
+                    <layout manager="pack">
+                      <property name="expand">false</property>
+                      <property name="padx">2</property>
+                      <property name="pady">2</property>
+                      <property name="side">left</property>
+                    </layout>
+                  </object>
+                </child>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="Frame4">
+            <property name="height">200</property>
+            <property name="width">200</property>
+            <layout manager="pack">
+              <property name="fill">x</property>
+              <property name="pady">2</property>
+              <property name="side">top</property>
+            </layout>
+            <child>
+              <object class="ttk.Label" id="Label3">
+                <property name="text" translatable="yes">Word output file: </property>
+                <layout manager="pack">
+                  <property name="fill">x</property>
+                  <property name="padx">2</property>
+                  <property name="pady">2</property>
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+            <child>
+              <object class="ttk.Entry" id="Entry2">
+                <property name="textvariable">string:output_word_file</property>
+                <layout manager="pack">
+                  <property name="fill">x</property>
+                  <property name="padx">2</property>
+                  <property name="pady">2</property>
+                  <property name="side">top</property>
+                </layout>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="ttk.Frame" id="Frame6">
+        <property name="height">200</property>
+        <property name="width">200</property>
+        <layout manager="pack">
+          <property name="expand">false</property>
+          <property name="fill">both</property>
+          <property name="padx">2</property>
+          <property name="pady">2</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="ttk.Button" id="select_pandoc_button" named="True">
+            <property name="text" translatable="yes">Select Pandoc</property>
+            <bind sequence="&lt;ButtonRelease&gt;" handler="select_pandoc" add="" />
+            <layout manager="pack">
+              <property name="expand">false</property>
+              <property name="padx">2</property>
+              <property name="pady">4</property>
+              <property name="side">right</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="execute_button" named="True">
+            <property name="text" translatable="yes">Execute</property>
+            <bind sequence="&lt;ButtonRelease&gt;" handler="execute" add="" />
+            <layout manager="pack">
+              <property name="padx">2</property>
+              <property name="pady">4</property>
+              <property name="side">right</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Button" id="Button7" named="True">
+            <property name="text" translatable="yes">Open</property>
+            <bind sequence="&lt;ButtonRelease&gt;" handler="open_folder" add="" />
+            <layout manager="pack">
+              <property name="padx">2</property>
+              <property name="pady">4</property>
+              <property name="side">right</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+    <child>
+      <object class="tk.Text" id="debug" named="True">
+        <property name="height">10</property>
+        <property name="width">50</property>
+        <layout manager="pack">
+          <property name="anchor">s</property>
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="padx">3</property>
+          <property name="pady">3</property>
+          <property name="side">bottom</property>
+        </layout>
+      </object>
+    </child>
+  </object>
+</interface>
