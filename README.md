@@ -4,9 +4,9 @@ Convert markdown documents into a Microsoft Word document using Pandoc.
 
 ![md2word](./md2word_window.png)
 
-If you are not familiar with Markdown, I recommend visiting the website [Markdown guide](https://www.markdownguide.org/). 
+If you are not familiar with Markdown, I recommend visiting the website [Markdown guide](https://www.markdownguide.org). 
 
-If you are not familiar with Pandoc, I recommend visiting the website [Pandoc]([https://www.markdownguide.org/](https://pandoc.org/) .
+If you are not familiar with Pandoc, I recommend visiting the website [Pandoc]([https://www.markdownguide.org/](https://pandoc.org).
 
 
 
