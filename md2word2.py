@@ -52,7 +52,7 @@ class md2word:
             self.execute_button.config(state='normal')
         else:
             self.execute_button.config(state='disable')
-            self.debug.insert('pandoc.exe not defined. Install and select .exe file\n')
+            self.debug.insert('insert','pandoc.exe not defined. Install and select .exe file\n')
 
 
 
