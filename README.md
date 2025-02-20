@@ -1,28 +1,26 @@
 # md2word
 
-Convert markdown documents into a Microsoft Word document using Pandoc.
+Convert Markdown documents into a Microsoft Word document using Pandoc.
 
 ![md2word](./md2word_window.png)
 
-If you are not familiar with Markdown, I recommend visiting the website [Markdown guide](https://www.markdownguide.org). 
+If you are not familiar with Markdown, I recommend visiting the website [Markdown Guide](https://www.markdownguide.org). 
 
 If you are not familiar with Pandoc, I recommend visiting the website [Pandoc](https://pandoc.org).
 
-
-
 # Installation
 
-If you like git use command in your prefered folder: 
+If you like **Git**, use the following command in your preferred folder: 
 
 	git clone https://github.com/marconaccini/md2word.git
 	
-Otherwise download the zip and extract content in your prefered folder
+Otherwise, download the ZIP file and extract its contents in your preferred folder.
 
-If you like create e venv enviroment like this:
+If you like, create a **venv** environment like this:
 
 	python -m venv env
 	
-and then activate the enviroment with:
+and then activate the environment with:
 
 Linux:
 
@@ -32,26 +30,20 @@ Windows:
 
 	env\Scripts\activate.bat
 
-Than in that folder run this command:
+**Then**, in that folder, run this command:
 
 	pip install -r requirements.txt	
 
-
-
 # Other requirements  
 
-md2word needs to run with python3 and pandoc.
-
+md2word needs to run with **Python 3** and Pandoc.
 
 # How to run  
 
-Into windows:
+**On Windows:**
 
 	py md2word2.py
 	
-	
-into linux 	
+**On Linux:**	
 
 	python3 ./md2word2.py
-	
-	
